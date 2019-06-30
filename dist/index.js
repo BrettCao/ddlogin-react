@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -6,9 +6,13 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -45,7 +49,7 @@ var DDlogin = function (_React$Component) {
     }
 
     _createClass(DDlogin, [{
-        key: "render",
+        key: 'render',
         value: function render() {
             var iframeOption = {
                 id: this.props.options.id,
@@ -57,7 +61,7 @@ var DDlogin = function (_React$Component) {
                 height: this.props.options.height,
                 className: this.props.className
             };
-            return _react2.default.createElement("iframe", iframeOption);
+            return _react2.default.createElement('iframe', iframeOption);
         }
     }]);
 
@@ -65,15 +69,15 @@ var DDlogin = function (_React$Component) {
 }(_react2.default.Component);
 
 DDlogin.propTypes = {
-    options: _react2.default.PropTypes.shape({
-        id: _react2.default.PropTypes.string,
-        goto: _react2.default.PropTypes.string.isRequired,
-        style: _react2.default.PropTypes.string,
-        href: _react2.default.PropTypes.string,
-        width: _react2.default.PropTypes.string,
-        height: _react2.default.PropTypes.string
+    options: _propTypes2.default.shape({
+        id: _propTypes2.default.string,
+        goto: _propTypes2.default.string.isRequired,
+        style: _propTypes2.default.string,
+        href: _propTypes2.default.string,
+        width: _propTypes2.default.string,
+        height: _propTypes2.default.string
     }),
-    className: _react2.default.PropTypes.string
+    className: _propTypes2.default.string
 };
 
 DDlogin.defaultProps = {

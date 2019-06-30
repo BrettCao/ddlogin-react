@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 class DDlogin extends React.Component{
     constructor(props) {
@@ -32,15 +33,15 @@ class DDlogin extends React.Component{
 }
 
 DDlogin.propTypes = {
-    options: React.PropTypes.shape({
-        id: React.PropTypes.string,
-        goto: React.PropTypes.string.isRequired,
-        style: React.PropTypes.string,
-        href: React.PropTypes.string,
-        width: React.PropTypes.string,
-        height: React.PropTypes.string, 
+    options: PropTypes.shape({
+        id: PropTypes.string,
+        goto: PropTypes.string.isRequired,
+        style: PropTypes.string,
+        href: PropTypes.string,
+        width: PropTypes.string,
+        height: PropTypes.string,
     }),
-    className: React.PropTypes.string
+    className: PropTypes.string
 }
 
 DDlogin.defaultProps={
